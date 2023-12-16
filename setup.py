@@ -11,11 +11,6 @@ packages = find_packages(where=".")
 
 here = os.path.abspath(os.path.dirname(__file__))
 
-with io.open(os.path.join(here, 'README.rst'), encoding='utf-8') as f:
-    long_description = f.read()
-    
-
-
 setup(
     name='orbs',
     version=orbs.version.__version__,
@@ -26,7 +21,6 @@ setup(
     maintainer='Thomas Martin',
     maintainer_email='thomas.martin.1@ulaval.ca',
     description="Data reduction software for SITELLE's data",
-    long_description=long_description,
     packages=packages,
     package_dir={"": "."},
     include_package_data=True,
